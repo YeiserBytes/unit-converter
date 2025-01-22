@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="./index.js"></script>
+    </head>
+
+    <body>
+        <main class="container">
+            <h1>Unit Converter</h1>
+            <nav>
+                <a href="?type=length">
+                    Length
+                </a>
+                <a href="?type=weight">
+                    Weight
+                </a>
+                <a href="?type=temperature">
+                    Temperature
+                </a>
+            </nav>
+
+            <section>
+                <form id="converterForm" data-type="length">
+                    <label>
+                        Enter Value:
+                        <input type="number" step="any" id="value" name="value" required />
+                    </label>
+                    <label>
+                        From:
+                        <select name="from" id="from" required></select>
+                    </label>
+                    <label>
+                        To:
+                        <select name="to" id="to" required></select>
+                    </label>
+                    <button type="submit">
+                        Convert
+                    </button>
+                </form>
+
+                <div id="result"></div>
+            </section>
+        </main>
+    </body>
+
+</html>
